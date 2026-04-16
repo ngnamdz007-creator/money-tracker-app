@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.moneytracker.nativeapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.moneytracker.nativeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.moneytracker.nativeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:5:5-50:19
+18        android:name="com.moneytracker.nativeapp.MoneyTrackerApplication"
+18-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:6:9-48
+19        android:allowBackup="true"
+19-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:7:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.12.0] C:\Users\NAM\.gradle\caches\transforms-3\290d2a5d0c1054c8ee28beab1c46cb93\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:8:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:9:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:10:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:11:9-35
+27        android:theme="@style/Theme.MoneyTracker" >
+27-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:12:9-50
+28        <activity
+28-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:15:9-23:20
+29            android:name="com.moneytracker.nativeapp.ui.MainActivity"
+29-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:16:13-44
+30            android:exported="true"
+30-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:17:13-36
+31            android:screenOrientation="portrait" >
+31-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:18:13-49
+32            <intent-filter>
+32-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:19:13-22:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:20:17-69
+33-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:20:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:21:17-77
+35-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:21:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:25:9-28:52
+39            android:name="com.moneytracker.nativeapp.ui.AddTransactionActivity"
+39-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:26:13-54
+40            android:parentActivityName="com.moneytracker.nativeapp.ui.MainActivity"
+40-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:27:13-58
+41            android:screenOrientation="portrait" />
+41-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:28:13-49
+42        <activity
+42-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:30:9-33:52
+43            android:name="com.moneytracker.nativeapp.ui.SettingsActivity"
+43-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:31:13-48
+44            android:parentActivityName="com.moneytracker.nativeapp.ui.MainActivity"
+44-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:32:13-58
+45            android:screenOrientation="portrait" />
+45-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:33:13-49
+46        <activity
+46-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:35:9-38:52
+47            android:name="com.moneytracker.nativeapp.ui.CurrencyActivity"
+47-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:36:13-48
+48            android:parentActivityName="com.moneytracker.nativeapp.ui.MainActivity"
+48-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:37:13-58
+49            android:screenOrientation="portrait" />
+49-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:38:13-49
+50        <activity
+50-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:40:9-43:52
+51            android:name="com.moneytracker.nativeapp.ui.LanguageActivity"
+51-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:41:13-48
+52            android:parentActivityName="com.moneytracker.nativeapp.ui.MainActivity"
+52-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:42:13-58
+53            android:screenOrientation="portrait" />
+53-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:43:13-49
+54        <activity
+54-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:45:9-48:52
+55            android:name="com.moneytracker.nativeapp.ui.CategoriesActivity"
+55-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:46:13-50
+56            android:parentActivityName="com.moneytracker.nativeapp.ui.MainActivity"
+56-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:47:13-58
+57            android:screenOrientation="portrait" />
+57-->C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:48:13-49
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="com.moneytracker.nativeapp.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\NAM\.gradle\caches\transforms-3\78d92e92bbb9d0a2d3b06fb11b7b0f49\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\NAM\.gradle\caches\transforms-3\2fc64c14cb9572f6ba1bb3b312fce2af\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\NAM\.gradle\caches\transforms-3\2fc64c14cb9572f6ba1bb3b312fce2af\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\NAM\.gradle\caches\transforms-3\2fc64c14cb9572f6ba1bb3b312fce2af\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <uses-library
+74-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+75            android:name="androidx.window.extensions"
+75-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+77        <uses-library
+77-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+78            android:name="androidx.window.sidecar"
+78-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0] C:\Users\NAM\.gradle\caches\transforms-3\d58b86a7bc2b31b8beb691eab82d47b0\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+80
+81        <service
+81-->[androidx.room:room-runtime:2.6.1] C:\Users\NAM\.gradle\caches\transforms-3\7f321814e085303aa84c815e4549f0de\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+82            android:name="androidx.room.MultiInstanceInvalidationService"
+82-->[androidx.room:room-runtime:2.6.1] C:\Users\NAM\.gradle\caches\transforms-3\7f321814e085303aa84c815e4549f0de\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+83            android:directBootAware="true"
+83-->[androidx.room:room-runtime:2.6.1] C:\Users\NAM\.gradle\caches\transforms-3\7f321814e085303aa84c815e4549f0de\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+84            android:exported="false" />
+84-->[androidx.room:room-runtime:2.6.1] C:\Users\NAM\.gradle\caches\transforms-3\7f321814e085303aa84c815e4549f0de\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+85
+86        <receiver
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+87            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+88            android:directBootAware="false"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+89            android:enabled="true"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+90            android:exported="true"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+91            android:permission="android.permission.DUMP" >
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+93                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+96                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+99                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+102                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\NAM\.gradle\caches\transforms-3\49d40d2815d2cfb97fb57a5555234ece\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+103            </intent-filter>
+104        </receiver>
+105    </application>
+106
+107</manifest>

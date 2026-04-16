@@ -1,0 +1,3 @@
+com.moneytracker.nativeapp.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

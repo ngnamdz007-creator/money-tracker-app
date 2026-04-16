@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Gradient Colors -->
+    <color name="purple_500">#8b5cf6</color>
+    <color name="purple_600">#7c3aed</color>
+    <color name="purple_400">#a78bfa</color>
+    <color name="purple_100">#ede9fe</color>
+    <color name="pink_500">#ec4899</color>
+    <color name="pink_400">#f472b6</color>
+    <color name="teal_500">#14b8a6</color>
+    <color name="teal_400">#2dd4bf</color>
+    <color name="coral_500">#f97316</color>
+    <color name="coral_400">#fb923c</color>
+    
+    <!-- Legacy colors kept for compatibility -->
+    <color name="blue_500">#3b82f6</color>
+    <color name="blue_600">#2563eb</color>
+    <color name="green_500">#10b981</color>
+    <color name="green_400">#34d399</color>
+    <color name="red_500">#ef4444</color>
+    <color name="red_400">#f87171</color>
+    
+    <!-- Category Colors -->
+    <color name="cat_food">#FF6B6B</color>
+    <color name="cat_transport">#4ECDC4</color>
+    <color name="cat_shopping">#45B7D1</color>
+    <color name="cat_entertainment">#96CEB4</color>
+    <color name="cat_bills">#FFEAA7</color>
+    <color name="cat_health">#DDA0DD</color>
+    <color name="cat_education">#98D8C8</color>
+    <color name="cat_salary">#2ECC71</color>
+    <color name="cat_other">#95A5A6</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_end">#764ba2</color>
+    <color name="gradient_coral_start">#f093fb</color>
+    <color name="gradient_coral_end">#f5576c</color>
+    <color name="gradient_teal_start">#4facfe</color>
+    <color name="gradient_teal_end">#00f2fe</color>
+    
+    <!-- Glassmorphism -->
+    <color name="glass_white">#80FFFFFF</color>
+    <color name="glass_purple">#208b5cf6</color>
+    <color name="glass_pink">#20ec4899</color>
+    
+    <!-- Grays -->
+    <color name="gray_50">#f9fafb</color>
+    <color name="gray_100">#f3f4f6</color>
+    <color name="gray_200">#e5e7eb</color>
+    <color name="gray_300">#d1d5db</color>
+    <color name="gray_400">#9ca3af</color>
+    <color name="gray_500">#6b7280</color>
+    <color name="gray_600">#4b5563</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_800">#1f2937</color>
+    <color name="gray_900">#111827</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="surface">#fafafa</color>
+    
+    <!-- Theme Colors -->
+    <color name="colorPrimary">@color/purple_500</color>
+    <color name="colorPrimaryDark">@color/purple_600</color>
+    <color name="colorAccent">@color/pink_500</color>
+    <color name="colorIncome">@color/teal_500</color>
+    <color name="colorExpense">@color/coral_500</color>
+</resources>

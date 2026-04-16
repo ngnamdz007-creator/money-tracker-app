@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money Tracker</string>
+    
+    <string name="nav_home">Home</string>
+    <string name="nav_statistics">Statistiche</string>
+    <string name="nav_budget">Budget</string>
+    <string name="nav_settings">Impostazioni</string>
+    
+    <string name="total_balance">Saldo Totale</string>
+    <string name="income">Entrate</string>
+    <string name="expense">Uscite</string>
+    <string name="recent_transactions">Transazioni Recenti</string>
+    <string name="add_transaction">Aggiungi Transazione</string>
+    
+    <string name="budget">Budget</string>
+    <string name="monthly_budget">Budget Mensile</string>
+    <string name="spent">Speso</string>
+    <string name="remaining">Rimanente</string>
+    <string name="set_budget">Imposta Budget</string>
+    
+    <string name="statistics">Statistiche</string>
+    <string name="expense_by_category">Uscite per Categoria</string>
+    <string name="monthly_trend">Tendenza Mensile</string>
+    
+    <string name="settings">Impostazioni</string>
+    <string name="profile">Profilo</string>
+    <string name="categories">Categorie</string>
+    <string name="currency">Valuta</string>
+    <string name="export_data">Esporta Dati</string>
+    
+    <string name="save_transaction">Salva Transazione</string>
+    <string name="amount">Importo</string>
+    <string name="title">Titolo</string>
+    <string name="description">Descrizione</string>
+    <string name="category">Categoria</string>
+    
+    <string name="good_morning">Buongiorno!</string>
+    <string name="good_afternoon">Buon pomeriggio!</string>
+    <string name="good_evening">Buonasera!</string>
+    <string name="add_new">+ Aggiungi</string>
+    <string name="save_settings">Salva Impostazioni</string>
+    <string name="user_name">Nome Utente</string>
+    <string name="language">Lingua</string>
+    <string name="edit_profile">Modifica Profilo</string>
+    <string name="manage_categories">Gestisci Categorie</string>
+    <string name="change_currency">Cambia Valuta</string>
+    <string name="export_csv_pdf">Esporta CSV o PDF</string>
+    <string name="transaction_saved">Transazione salvata</string>
+    <string name="please_fill_amount_title">Per favore inserisci importo e titolo</string>
+    <string name="please_enter_valid_amount">Per favore inserisci un importo valido</string>
+    <string name="settings_saved">Impostazioni salvate</string>
+    <string name="select_currency">Seleziona Valuta</string>
+    <string name="select_language">Seleziona Lingua</string>
+    
+    <!-- Additional labels -->
+    <string name="spent_label">Speso: %1$s</string>
+    <string name="budget_label">Budget: %1$s</string>
+    <string name="remaining_label">Rimanente: %1$s</string>
+    <string name="description_optional">Descrizione (Opzionale)</string>
+    <string name="monthly_budget_amount">Importo Budget Mensile</string>
+    
+    <!-- Period selector -->
+    <string name="period">Periodo</string>
+    <string name="select_date">Seleziona Data</string>
+    <string name="select_month">Seleziona Mese</string>
+    <string name="select_year">Seleziona Anno</string>
+    <string name="day">Giorno</string>
+    <string name="month">Mese</string>
+    <string name="year">Anno</string>
+    
+    <!-- Category management -->
+    <string name="add_category">Aggiungi Categoria</string>
+    <string name="edit_category">Modifica Categoria</string>
+    <string name="category_name">Nome Categoria</string>
+    <string name="select_icon">Seleziona Icona</string>
+    <string name="select_color">Seleziona Colore</string>
+    <string name="delete_category">Elimina Categoria</string>
+    <string name="delete_category_confirm">Sei sicuro di voler eliminare questa categoria?</string>
+    <string name="category_saved">Categoria salvata</string>
+    <string name="category_deleted">Categoria eliminata</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    
+    <!-- Settings -->
+    <string name="edit_your_profile">Modifica il tuo profilo</string>
+    <string name="export_to_csv_pdf">Esporta in CSV o PDF</string>
+</resources>

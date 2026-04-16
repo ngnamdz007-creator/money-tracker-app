@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money Tracker</string>
+    
+    <string name="nav_home">หน้าแรก</string>
+    <string name="nav_statistics">สถิติ</string>
+    <string name="nav_budget">งบประมาณ</string>
+    <string name="nav_settings">การตั้งค่า</string>
+    
+    <string name="total_balance">ยอดรวม</string>
+    <string name="income">รายรับ</string>
+    <string name="expense">รายจ่าย</string>
+    <string name="recent_transactions">ธุรกรรมล่าสุด</string>
+    <string name="add_transaction">เพิ่มธุรกรรม</string>
+    
+    <string name="budget">งบประมาณ</string>
+    <string name="monthly_budget">งบประมาณรายเดือน</string>
+    <string name="spent">ใช้ไป</string>
+    <string name="remaining">คงเหลือ</string>
+    <string name="set_budget">ตั้งงบประมาณ</string>
+    
+    <string name="statistics">สถิติ</string>
+    <string name="expense_by_category">รายจ่ายตามหมวดหมู่</string>
+    <string name="monthly_trend">แนวโน้มรายเดือน</string>
+    
+    <string name="settings">การตั้งค่า</string>
+    <string name="profile">โปรไฟล์</string>
+    <string name="categories">หมวดหมู่</string>
+    <string name="currency">สกุลเงิน</string>
+    <string name="export_data">ส่งออกข้อมูล</string>
+    
+    <string name="save_transaction">บันทึกธุรกรรม</string>
+    <string name="amount">จำนวน</string>
+    <string name="title">ชื่อ</string>
+    <string name="description">คำอธิบาย</string>
+    <string name="category">หมวดหมู่</string>
+    
+    <string name="good_morning">สวัสดีตอนเช้า!</string>
+    <string name="good_afternoon">สวัสดีตอนบ่าย!</string>
+    <string name="good_evening">สวัสดีตอนเย็น!</string>
+    <string name="add_new">+ เพิ่ม</string>
+    <string name="save_settings">บันทึกการตั้งค่า</string>
+    <string name="user_name">ชื่อผู้ใช้</string>
+    <string name="language">ภาษา</string>
+    <string name="edit_profile">แก้ไขโปรไฟล์</string>
+    <string name="manage_categories">จัดการหมวดหมู่</string>
+    <string name="change_currency">เปลี่ยนสกุลเงิน</string>
+    <string name="export_csv_pdf">ส่งออก CSV หรือ PDF</string>
+    <string name="transaction_saved">บันทึกธุรกรรมแล้ว</string>
+    <string name="please_fill_amount_title">กรุณากรอกจำนวนและชื่อ</string>
+    <string name="please_enter_valid_amount">กรุณากรอกจำนวนที่ถูกต้อง</string>
+    <string name="settings_saved">บันทึกการตั้งค่าแล้ว</string>
+    <string name="select_currency">เลือกสกุลเงิน</string>
+    <string name="select_language">เลือกภาษา</string>
+    
+    <!-- Additional labels -->
+    <string name="spent_label">ใช้ไป: %1$s</string>
+    <string name="budget_label">งบประมาณ: %1$s</string>
+    <string name="remaining_label">เหลือ: %1$s</string>
+    <string name="description_optional">คำอธิบาย (เสริม)</string>
+    <string name="monthly_budget_amount">จำนวนงบประมาณรายเดือน</string>
+    
+    <!-- Period selector -->
+    <string name="period">ช่วงเวลา</string>
+    <string name="select_date">เลือกวันที่</string>
+    <string name="select_month">เลือกเดือน</string>
+    <string name="select_year">เลือกปี</string>
+    <string name="day">วัน</string>
+    <string name="month">เดือน</string>
+    <string name="year">ปี</string>
+    
+    <!-- Category management -->
+    <string name="add_category">เพิ่มหมวดหมู่</string>
+    <string name="edit_category">แก้ไขหมวดหมู่</string>
+    <string name="category_name">ชื่อหมวดหมู่</string>
+    <string name="select_icon">เลือกไอคอน</string>
+    <string name="select_color">เลือกสี</string>
+    <string name="delete_category">ลบหมวดหมู่</string>
+    <string name="delete_category_confirm">คุณแน่ใจหรือไม่ว่าต้องการลบหมวดหมู่นี้?</string>
+    <string name="category_saved">บันทึกหมวดหมู่แล้ว</string>
+    <string name="category_deleted">ลบหมวดหมู่แล้ว</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="save">บันทึก</string>
+    
+    <!-- Settings -->
+    <string name="edit_your_profile">แก้ไขโปรไฟล์</string>
+    <string name="export_to_csv_pdf">ส่งออกเป็น CSV หรือ PDF</string>
+</resources>

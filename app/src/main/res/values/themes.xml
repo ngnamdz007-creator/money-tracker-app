@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MoneyTracker" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_600</item>
+        <item name="colorAccent">@color/pink_500</item>
+        <item name="colorSecondary">@color/teal_500</item>
+        <item name="colorTertiary">@color/coral_500</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    
+    <!-- Circle Image Style -->
+    <style name="CircleImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
