@@ -19,19 +19,25 @@ class MoneyTrackerApplication : Application() {
         Log.d("MoneyTrackerApplication", "=== APPLICATION onCreate START ===")
         
         // Init NPH SDK - Load config from Firebase (fallback to assets/ads_config.json)
+        // NOTE: Firebase Remote Config cần có key 'nph_ads_config' được setup bởi mentor
+        // Nếu Firebase chưa setup, SDK sẽ fallback về assets/ads_config.json
+        // Fallback chain: Firebase → Cache → Local assets → Default
         try {
-            // Test load config từ assets
+            // Verify local config exists (used as Firebase fallback)
             val configJson = assets.open("ads_config.json").bufferedReader().use { it.readText() }
-            Log.d("MoneyTrackerApplication", "=== Config JSON loaded: ${configJson.length} chars ===")
+            Log.d("MoneyTrackerApplication", "=== Local ads_config.json loaded: ${configJson.length} chars ===")
+            
             NphSdk.init(
                 context = this,
                 apiKey = "nph_zQPZWBcm23CZlBYQF2Isb_N7KuMKfJOK",
                 configSource = ConfigSource.FIREBASE,
-                enableDebug = true  // Force debug mode
+                enableDebug = true  // Force debug mode - logs all NPH SDK events
             )
-            Log.d("MoneyTrackerApplication", "=== NphSdk.init() CALLED SUCCESS ===")
+            Log.d("MoneyTrackerApplication", "=== NphSdk.init() called ===")
+            Log.d("MoneyTrackerApplication", "=== SDK will try: Firebase → Cache → Local assets ===")
         } catch (e: Exception) {
             Log.e("MoneyTrackerApplication", "=== NphSdk.init() FAILED: ${e.message}", e)
+            Log.e("MoneyTrackerApplication", "=== Possible causes: License key mismatch, Signature mismatch, or Network error ===")
         }
         
         // Initialize database with default data on first run
