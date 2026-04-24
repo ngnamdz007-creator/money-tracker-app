@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.FrameLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import com.moneytracker.nativeapp.MoneyTrackerApplication
 import com.moneytracker.nativeapp.R
 import com.nphlab.sdk.ads.NphAds
 import com.nphlab.sdk.ads.listener.NphAdListener
@@ -43,11 +44,15 @@ class MainActivity : AppCompatActivity() {
             showFragment(HomeFragment())
         }
         
-        // Load banner ad
+        // Load banner ad (check SDK ready)
         val bannerContainer = findViewById<FrameLayout>(R.id.bannerAdContainer)
         bannerContainer?.let {
-            Log.d("NphAds", "=== Loading banner ad: nsp_bn_home_bottom ===")
-            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
+            if (MoneyTrackerApplication.isSdkReady) {
+                Log.d("NphAds", "=== Loading banner ad: nsp_bn_home_bottom ===")
+                NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
+            } else {
+                Log.w("NphAds", "=== SDK not ready, skipping banner ad ===")
+            }
         }
     }
     
@@ -92,6 +97,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInterstitialAd(onComplete: () -> Unit) {
+        if (!MoneyTrackerApplication.isSdkReady) {
+            Log.w("NphAds", "=== SDK not ready, skipping interstitial ===")
+            onComplete()
+            return
+        }
         NphAds.showInterstitial(
             activity = this,
             nameSpace = "nsp_inter_main",
@@ -107,6 +117,11 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun showInterstitialAdSettings(onComplete: () -> Unit) {
+        if (!MoneyTrackerApplication.isSdkReady) {
+            Log.w("NphAds", "=== SDK not ready, skipping settings interstitial ===")
+            onComplete()
+            return
+        }
         Log.d("NphAds", "=== Showing interstitial for Settings: nsp_inter_settings ===")
         NphAds.showInterstitial(
             activity = this,

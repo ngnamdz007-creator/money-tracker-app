@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
+import com.moneytracker.nativeapp.MoneyTrackerApplication
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.UserSettings
@@ -58,6 +59,11 @@ class SettingsActivity : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 Log.d("SettingsActivity", "=== Back pressed, showing interstitial ad ===")
+                if (!MoneyTrackerApplication.isSdkReady) {
+                    Log.w("NphAds", "=== SDK not ready, skipping interstitial ===")
+                    finish()
+                    return
+                }
                 NphAds.showInterstitial(
                     activity = this@SettingsActivity,
                     nameSpace = "nsp_inter_settings",

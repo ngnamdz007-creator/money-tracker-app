@@ -1,8 +1,11 @@
 package com.moneytracker.nativeapp
 
 import android.app.Application
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
+import com.nphlab.sdk.ads.NphAds
 import com.nphlab.sdk.ads.NphSdk
 import com.nphlab.sdk.config.ConfigSource
 import kotlinx.coroutines.CoroutineScope
@@ -12,6 +15,10 @@ import kotlinx.coroutines.launch
 
 class MoneyTrackerApplication : Application() {
     val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+    
+    companion object {
+        var isSdkReady = false
+    }
     
     override fun onCreate() {
         super.onCreate()
@@ -35,9 +42,15 @@ class MoneyTrackerApplication : Application() {
             )
             Log.d("MoneyTrackerApplication", "=== NphSdk.init() called ===")
             Log.d("MoneyTrackerApplication", "=== SDK will try: Firebase → Cache → Local assets ===")
+            
+            // Mark SDK as ready (best effort - actual verify depends on server response)
+            isSdkReady = true
+            Log.d("MoneyTrackerApplication", "=== isSdkReady set to true ===")
+            
         } catch (e: Exception) {
             Log.e("MoneyTrackerApplication", "=== NphSdk.init() FAILED: ${e.message}", e)
             Log.e("MoneyTrackerApplication", "=== Possible causes: License key mismatch, Signature mismatch, or Network error ===")
+            Log.e("MoneyTrackerApplication", "=== ACTION REQUIRED: Contact mentor to verify license key binding on server ===")
         }
         
         // Initialize database with default data on first run
