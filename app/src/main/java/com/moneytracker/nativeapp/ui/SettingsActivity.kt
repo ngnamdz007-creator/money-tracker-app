@@ -2,7 +2,6 @@ package com.moneytracker.nativeapp.ui
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -49,7 +48,6 @@ class SettingsActivity : AppCompatActivity() {
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
             setNavigationOnClickListener {
-                Log.d("SettingsActivity", "=== Toolbar navigation clicked ===")
                 onBackPressedDispatcher.onBackPressed()
             }
             title = getString(R.string.profile)
@@ -58,9 +56,7 @@ class SettingsActivity : AppCompatActivity() {
         // Register back button interstitial ad
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                Log.d("SettingsActivity", "=== Back pressed, showing interstitial ad ===")
                 if (!MoneyTrackerApplication.isSdkReady) {
-                    Log.w("NphAds", "=== SDK not ready, skipping interstitial ===")
                     finish()
                     return
                 }
@@ -69,11 +65,9 @@ class SettingsActivity : AppCompatActivity() {
                     nameSpace = "nsp_inter_settings",
                     listener = object : NphAdListener() {
                         override fun onAdDismissed() {
-                            Log.d("NphAds", "=== Settings interstitial dismissed, finishing ===")
                             finish()
                         }
                         override fun onAdFailed(error: AdError) {
-                            Log.e("NphAds", "=== Settings interstitial failed: ${error.message}, finishing ===")
                             finish()
                         }
                     }

@@ -1,0 +1,14 @@
+# Local
+local.properties
+# Firebase
+app/google-services.json
+# Keystore
+*.jks
+*.keystore
+# Build
+/build
+/app/build
+.gradle
+# IDE
+.idea/
+*.iml

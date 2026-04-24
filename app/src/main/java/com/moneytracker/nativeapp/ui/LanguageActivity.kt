@@ -3,7 +3,6 @@ package com.moneytracker.nativeapp.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
@@ -38,7 +37,6 @@ class LanguageActivity : AppCompatActivity() {
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
             setNavigationOnClickListener {
-                Log.d("LanguageActivity", "=== Toolbar navigation clicked ===")
                 onBackPressedDispatcher.onBackPressed()
             }
             title = getString(R.string.language)
@@ -47,9 +45,7 @@ class LanguageActivity : AppCompatActivity() {
         // Register back button interstitial ad
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                Log.d("LanguageActivity", "=== Back pressed, showing interstitial ad ===")
                 if (!MoneyTrackerApplication.isSdkReady) {
-                    Log.w("NphAds", "=== SDK not ready, skipping interstitial ===")
                     finish()
                     return
                 }
@@ -58,11 +54,9 @@ class LanguageActivity : AppCompatActivity() {
                     nameSpace = "nsp_inter_language",
                     listener = object : NphAdListener() {
                         override fun onAdDismissed() {
-                            Log.d("NphAds", "=== Interstitial dismissed, finishing ===")
                             finish()
                         }
                         override fun onAdFailed(error: AdError) {
-                            Log.e("NphAds", "=== Interstitial failed: ${error.message}, finishing ===")
                             finish()
                         }
                     }

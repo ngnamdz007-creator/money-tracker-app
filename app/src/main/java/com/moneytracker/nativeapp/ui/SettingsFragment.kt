@@ -58,11 +58,9 @@ class SettingsFragment : Fragment() {
 
         // Load native ad (check SDK ready)
         val nativeAdContainer = view.findViewById<FrameLayout>(R.id.nativeAdContainer)
-        nativeAdContainer?.let {
-            if (MoneyTrackerApplication.isSdkReady) {
+        if (MoneyTrackerApplication.isSdkReady) {
+            nativeAdContainer?.let {
                 NphAds.loadNativeInto(it, "nsp_native_settings")
-            } else {
-                Log.w("NphAds", "=== SDK not ready, skipping native ad ===")
             }
         }
     }
