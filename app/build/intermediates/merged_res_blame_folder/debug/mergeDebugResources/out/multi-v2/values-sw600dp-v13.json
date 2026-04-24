@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-50:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-72:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\NAM\\.gradle\\caches\\transforms-3\\b0b0b303fcafd83448f4087096e4ce5d\\transformed\\material-1.11.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\NAM\\.gradle\\caches\\9.3.1\\transforms\\b08328f6983fcf4e56e6da1b9f30eae8\\workspace\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\NAM\\.gradle\\caches\\9.3.1\\transforms\\e7c62041cdd642bbf5e2f7403cbf23bd\\workspace\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "10,11,12,13,14,15,17,18,19,20,21,25",
                         "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
                         "endOffsets": "666,736,807,879,937,995,1104,1168,1224,1283,1346,1518"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\NAM\\.gradle\\caches\\transforms-3\\804dbff29ae9dd048af8a43fa09cce44\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

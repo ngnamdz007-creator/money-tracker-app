@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +22,9 @@ import java.lang.String;
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   private final NestedScrollView rootView;
+
+  @NonNull
+  public final FrameLayout bannerAdContainer;
 
   @NonNull
   public final MaterialButton btnAdd;
@@ -49,12 +53,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final TextView tvIncome;
 
-  private FragmentHomeBinding(@NonNull NestedScrollView rootView, @NonNull MaterialButton btnAdd,
+  private FragmentHomeBinding(@NonNull NestedScrollView rootView,
+      @NonNull FrameLayout bannerAdContainer, @NonNull MaterialButton btnAdd,
       @NonNull MaterialButton btnSelectDate, @NonNull AutoCompleteTextView dropdownPeriod,
       @NonNull RecyclerView rvTransactions, @NonNull TextView tvBalance,
       @NonNull TextView tvCurrentPeriod, @NonNull TextView tvExpense, @NonNull TextView tvGreeting,
       @NonNull TextView tvIncome) {
     this.rootView = rootView;
+    this.bannerAdContainer = bannerAdContainer;
     this.btnAdd = btnAdd;
     this.btnSelectDate = btnSelectDate;
     this.dropdownPeriod = dropdownPeriod;
@@ -93,6 +99,12 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bannerAdContainer;
+      FrameLayout bannerAdContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bannerAdContainer == null) {
+        break missingId;
+      }
+
       id = R.id.btnAdd;
       MaterialButton btnAdd = ViewBindings.findChildViewById(rootView, id);
       if (btnAdd == null) {
@@ -147,9 +159,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((NestedScrollView) rootView, btnAdd, btnSelectDate,
-          dropdownPeriod, rvTransactions, tvBalance, tvCurrentPeriod, tvExpense, tvGreeting,
-          tvIncome);
+      return new FragmentHomeBinding((NestedScrollView) rootView, bannerAdContainer, btnAdd,
+          btnSelectDate, dropdownPeriod, rvTransactions, tvBalance, tvCurrentPeriod, tvExpense,
+          tvGreeting, tvIncome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

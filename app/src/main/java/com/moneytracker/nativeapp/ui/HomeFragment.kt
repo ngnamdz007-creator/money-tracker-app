@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.moneytracker.nativeapp.R
+import com.nphlab.sdk.ads.NphAds
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.PeriodType
 import com.moneytracker.nativeapp.data.Transaction
@@ -76,6 +77,13 @@ class HomeFragment : Fragment() {
         btnAdd.setOnClickListener {
             (activity as? MainActivity)?.navigateToAddTransaction()
         }
+        
+        // Load banner ad
+        val bannerContainer = view.findViewById<android.widget.FrameLayout>(R.id.bannerAdContainer)
+        bannerContainer?.let {
+            android.util.Log.d("HomeFragment", "Loading banner ad...")
+            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
+        } ?: android.util.Log.e("HomeFragment", "Banner container not found!")
         
         setupPeriodSelector()
         setupDatePicker()

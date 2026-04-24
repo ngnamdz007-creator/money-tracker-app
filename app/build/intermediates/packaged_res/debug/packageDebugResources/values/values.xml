@@ -81,9 +81,14 @@
     <string name="export_csv_pdf">Export to CSV or PDF</string>
     <string name="export_data">Export Data</string>
     <string name="export_to_csv_pdf">Export to CSV or PDF</string>
+    <string name="gcm_defaultSenderId" translatable="false">572497243089</string>
     <string name="good_afternoon">Good afternoon!</string>
     <string name="good_evening">Good evening!</string>
     <string name="good_morning">Good morning!</string>
+    <string name="google_api_key" translatable="false">AIzaSyAl5Z6TJaMMAgJhhSXAv18p1YW2kWeDHZ0</string>
+    <string name="google_app_id" translatable="false">1:572497243089:android:5ab74dd8fe90380c30cef0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAl5Z6TJaMMAgJhhSXAv18p1YW2kWeDHZ0</string>
+    <string name="google_storage_bucket" translatable="false">money-tracker-native.firebasestorage.app</string>
     <string name="income">Income</string>
     <string name="language">Language</string>
     <string name="manage_categories">Manage categories</string>
@@ -99,6 +104,7 @@
     <string name="please_enter_valid_amount">Please enter valid amount</string>
     <string name="please_fill_amount_title">Please fill amount and title</string>
     <string name="profile">Profile</string>
+    <string name="project_id" translatable="false">money-tracker-native</string>
     <string name="recent_transactions">Recent Transactions</string>
     <string name="remaining">Remaining</string>
     <string name="remaining_label">Remaining: %1$s</string>

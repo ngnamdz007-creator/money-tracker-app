@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572497243089",
+    "project_id": "money-tracker-native",
+    "storage_bucket": "money-tracker-native.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572497243089:android:5ab74dd8fe90380c30cef0",
+        "android_client_info": {
+          "package_name": "com.moneytracker.nativeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl5Z6TJaMMAgJhhSXAv18p1YW2kWeDHZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
+import com.nphlab.sdk.ads.NphAds
+import android.widget.FrameLayout
 import com.moneytracker.nativeapp.data.UserSettings
 import kotlinx.coroutines.launch
 
@@ -52,8 +54,14 @@ class SettingsFragment : Fragment() {
         }
         
         loadSettings()
+
+        // Load native ad
+        val nativeAdContainer = view.findViewById<FrameLayout>(R.id.nativeAdContainer)
+        nativeAdContainer?.let {
+            NphAds.loadNativeInto(it, "nsp_native_settings")
+        }
     }
-    
+
     override fun onResume() {
         super.onResume()
         loadSettings()

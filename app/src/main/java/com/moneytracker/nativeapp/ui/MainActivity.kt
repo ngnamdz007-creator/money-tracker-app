@@ -6,6 +6,9 @@ import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import com.moneytracker.nativeapp.R
+import com.nphlab.sdk.ads.NphAds
+import com.nphlab.sdk.ads.listener.NphAdListener
+import com.nphlab.sdk.ads.AdError
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
@@ -49,7 +52,9 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_statistics -> {
-                    showFragment(StatisticsFragment())
+                    showInterstitialAd {
+                        showFragment(StatisticsFragment())
+                    }
                     true
                 }
                 R.id.nav_budget -> {
@@ -73,5 +78,25 @@ class MainActivity : AppCompatActivity() {
     
     fun navigateToAddTransaction() {
         startActivity(Intent(this, AddTransactionActivity::class.java))
+    }
+
+    private fun showInterstitialAd(onComplete: () -> Unit) {
+        NphAds.showInterstitial(
+            activity = this,
+            nameSpace = "nsp_inter_main",
+            listener = object : NphAdListener() {
+                override fun onAdDismissed() {
+                    onComplete()
+                }
+                override fun onAdFailed(error: AdError) {
+                    onComplete()
+                }
+            }
+        )
+    }
+
+    override fun onDestroy() {
+        NphAds.destroy(this)
+        super.onDestroy()
     }
 }

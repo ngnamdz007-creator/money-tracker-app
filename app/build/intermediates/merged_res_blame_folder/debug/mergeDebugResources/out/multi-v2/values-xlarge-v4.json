@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-50:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-72:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\NAM\\.gradle\\caches\\transforms-3\\804dbff29ae9dd048af8a43fa09cce44\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "C:\\Users\\NAM\\.gradle\\caches\\9.3.1\\transforms\\b08328f6983fcf4e56e6da1b9f30eae8\\workspace\\transformed\\appcompat-1.7.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

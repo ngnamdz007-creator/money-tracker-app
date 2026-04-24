@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-50:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-72:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\NAM\\.gradle\\caches\\transforms-3\\b0b0b303fcafd83448f4087096e4ce5d\\transformed\\material-1.11.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\NAM\\.gradle\\caches\\9.3.1\\transforms\\e7c62041cdd642bbf5e2f7403cbf23bd\\workspace\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

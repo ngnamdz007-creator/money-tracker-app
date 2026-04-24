@@ -4,6 +4,7 @@ package com.moneytracker.nativeapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -36,6 +37,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final MaterialCardView cardProfile;
 
   @NonNull
+  public final FrameLayout nativeAdContainer;
+
+  @NonNull
   public final TextView tvCurrencyValue;
 
   @NonNull
@@ -44,14 +48,15 @@ public final class FragmentSettingsBinding implements ViewBinding {
   private FragmentSettingsBinding(@NonNull ScrollView rootView,
       @NonNull MaterialCardView cardCategories, @NonNull MaterialCardView cardCurrency,
       @NonNull MaterialCardView cardExport, @NonNull MaterialCardView cardLanguage,
-      @NonNull MaterialCardView cardProfile, @NonNull TextView tvCurrencyValue,
-      @NonNull TextView tvLanguageValue) {
+      @NonNull MaterialCardView cardProfile, @NonNull FrameLayout nativeAdContainer,
+      @NonNull TextView tvCurrencyValue, @NonNull TextView tvLanguageValue) {
     this.rootView = rootView;
     this.cardCategories = cardCategories;
     this.cardCurrency = cardCurrency;
     this.cardExport = cardExport;
     this.cardLanguage = cardLanguage;
     this.cardProfile = cardProfile;
+    this.nativeAdContainer = nativeAdContainer;
     this.tvCurrencyValue = tvCurrencyValue;
     this.tvLanguageValue = tvLanguageValue;
   }
@@ -113,6 +118,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nativeAdContainer;
+      FrameLayout nativeAdContainer = ViewBindings.findChildViewById(rootView, id);
+      if (nativeAdContainer == null) {
+        break missingId;
+      }
+
       id = R.id.tvCurrencyValue;
       TextView tvCurrencyValue = ViewBindings.findChildViewById(rootView, id);
       if (tvCurrencyValue == null) {
@@ -126,7 +137,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
       }
 
       return new FragmentSettingsBinding((ScrollView) rootView, cardCategories, cardCurrency,
-          cardExport, cardLanguage, cardProfile, tvCurrencyValue, tvLanguageValue);
+          cardExport, cardLanguage, cardProfile, nativeAdContainer, tvCurrencyValue,
+          tvLanguageValue);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

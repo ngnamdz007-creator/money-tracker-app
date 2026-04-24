@@ -1,15 +1,17 @@
 [versions]
-agp = "8.3.0"
-kotlin = "1.9.22"
-coreKtx = "1.12.0"
+agp = "8.7.2"
+kotlin = "2.0.21"
+ksp = "2.0.21-1.0.28"
+googleServices = "4.4.2"
+coreKtx = "1.15.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-appcompat = "1.6.1"
-material = "1.11.0"
-constraintlayout = "2.1.4"
-lifecycle = "2.7.0"
-navigation = "2.7.7"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintlayout = "2.2.0"
+lifecycle = "2.8.7"
+navigation = "2.8.5"
 room = "2.6.1"
 coroutines = "1.7.3"
 mpAndroidChart = "3.1.0"
@@ -45,4 +47,5 @@ mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", versio
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }

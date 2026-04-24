@@ -1,66 +1,62 @@
 [
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_add_transaction.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_add_transaction.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_categories.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_categories.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\fragment_statistics.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\fragment_statistics.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/dialog_category.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/dialog_category.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\item_category.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\item_category.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/fragment_home.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_settings.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_settings.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/fragment_settings.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\fragment_home.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_settings.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.moneytracker.nativeapp-mergeDebugResources-51:/layout/activity_categories.xml",
-        "source": "com.moneytracker.nativeapp-main-54:/layout/activity_categories.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/fragment_budget.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/fragment_budget.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_categories.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_categories.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_language.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_language.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\dialog_category.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\dialog_category.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_splash.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\fragment_settings.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_currency.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_currency.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_language.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_language.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/item_color.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/item_color.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\item_color.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\item_color.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/fragment_statistics.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/fragment_statistics.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\item_transaction.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\item_transaction.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/item_category.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_main.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_main.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_main.xml"
     },
     {
-        "merged": "com.moneytracker.nativeapp-mergeDebugResources-51:/layout/item_category.xml",
-        "source": "com.moneytracker.nativeapp-main-54:/layout/item_category.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/item_transaction.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/item_transaction.xml"
     },
     {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\fragment_budget.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\fragment_budget.xml"
-    },
-    {
-        "merged": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-mergeDebugResources-51:\\layout\\activity_currency.xml",
-        "source": "C:\\Users\\NAM\\.gradle\\daemon\\8.4\\com.moneytracker.nativeapp-main-54:\\layout\\activity_currency.xml"
+        "merged": "com.moneytracker.nativeapp-mergeDebugResources-73:/layout/activity_add_transaction.xml",
+        "source": "com.moneytracker.nativeapp-main-76:/layout/activity_add_transaction.xml"
     }
 ]

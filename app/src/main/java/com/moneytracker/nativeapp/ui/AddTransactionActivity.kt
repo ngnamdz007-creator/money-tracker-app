@@ -12,6 +12,9 @@ import com.google.android.material.chip.ChipGroup
 import com.google.android.material.textfield.TextInputEditText
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.Category
+import com.nphlab.sdk.ads.NphAds
+import com.nphlab.sdk.ads.listener.NphAdListener
+import com.nphlab.sdk.ads.AdError
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.Transaction
 import com.moneytracker.nativeapp.data.TransactionType
@@ -173,6 +176,17 @@ class AddTransactionActivity : AppCompatActivity() {
         lifecycleScope.launch {
             repository.addTransaction(transaction)
             Toast.makeText(this@AddTransactionActivity, getString(R.string.transaction_saved), Toast.LENGTH_SHORT).show()
+            
+            // Show interstitial ad
+            NphAds.showInterstitial(
+                activity = this@AddTransactionActivity,
+                nameSpace = "nsp_inter_add_transaction",
+                listener = object : NphAdListener() {
+                    override fun onAdDismissed() {}
+                    override fun onAdFailed(error: AdError) {}
+                }
+            )
+            
             finish()
         }
     }

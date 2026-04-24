@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-50:/values-zh/values-zh.xml",
+            "outputFile": "com.moneytracker.nativeapp-mergeDebugResources-72:/values-zh/values-zh.xml",
             "map": [
                 {
                     "source": "C:\\Users\\NAM\\CascadeProjects\\money-tracker-native\\app\\src\\main\\res\\values-zh\\strings.xml",

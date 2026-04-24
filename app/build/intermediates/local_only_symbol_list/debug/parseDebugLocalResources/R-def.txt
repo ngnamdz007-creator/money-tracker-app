@@ -95,6 +95,7 @@ drawable ic_shopping_bag
 drawable ic_trending_up
 drawable ic_work
 drawable progress_budget
+id bannerAdContainer
 id barChart
 id bottomNavigation
 id btnAdd
@@ -121,6 +122,7 @@ id etUserName
 id fabAddCategory
 id fragmentContainer
 id ivIcon
+id nativeAdContainer
 id nav_budget
 id nav_home
 id nav_settings
@@ -161,6 +163,7 @@ layout activity_currency
 layout activity_language
 layout activity_main
 layout activity_settings
+layout activity_splash
 layout dialog_category
 layout fragment_budget
 layout fragment_home
@@ -201,9 +204,14 @@ string expense_by_category
 string export_csv_pdf
 string export_data
 string export_to_csv_pdf
+string gcm_defaultSenderId
 string good_afternoon
 string good_evening
 string good_morning
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string income
 string language
 string manage_categories
@@ -219,6 +227,7 @@ string period
 string please_enter_valid_amount
 string please_fill_amount_title
 string profile
+string project_id
 string recent_transactions
 string remaining
 string remaining_label
