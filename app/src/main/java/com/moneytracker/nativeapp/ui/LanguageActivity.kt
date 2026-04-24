@@ -3,9 +3,11 @@ package com.moneytracker.nativeapp.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.MaterialToolbar
@@ -13,6 +15,9 @@ import com.google.android.material.button.MaterialButton
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.UserSettings
+import com.nphlab.sdk.ads.NphAds
+import com.nphlab.sdk.ads.AdError
+import com.nphlab.sdk.ads.listener.NphAdListener
 import kotlinx.coroutines.launch
 import java.util.Locale
 
@@ -31,9 +36,33 @@ class LanguageActivity : AppCompatActivity() {
         repository = MoneyTrackerRepository(this)
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
-            setNavigationOnClickListener { finish() }
+            setNavigationOnClickListener {
+                Log.d("LanguageActivity", "=== Toolbar navigation clicked ===")
+                onBackPressedDispatcher.onBackPressed()
+            }
             title = getString(R.string.language)
         }
+        
+        // Register back button interstitial ad
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                Log.d("LanguageActivity", "=== Back pressed, showing interstitial ad ===")
+                NphAds.showInterstitial(
+                    activity = this@LanguageActivity,
+                    nameSpace = "nsp_inter_language",
+                    listener = object : NphAdListener() {
+                        override fun onAdDismissed() {
+                            Log.d("NphAds", "=== Interstitial dismissed, finishing ===")
+                            finish()
+                        }
+                        override fun onAdFailed(error: AdError) {
+                            Log.e("NphAds", "=== Interstitial failed: ${error.message}, finishing ===")
+                            finish()
+                        }
+                    }
+                )
+            }
+        })
         
         radioGroup = findViewById(R.id.radioGroupLanguage)
         btnSave = findViewById(R.id.btnSave)

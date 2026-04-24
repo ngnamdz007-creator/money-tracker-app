@@ -3,6 +3,8 @@ package com.moneytracker.nativeapp.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.FrameLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import com.moneytracker.nativeapp.R
@@ -40,6 +42,13 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             showFragment(HomeFragment())
         }
+        
+        // Load banner ad
+        val bannerContainer = findViewById<FrameLayout>(R.id.bannerAdContainer)
+        bannerContainer?.let {
+            Log.d("NphAds", "=== Loading banner ad: nsp_bn_home_bottom ===")
+            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
+        }
     }
     
     private fun setupBottomNavigation() {
@@ -62,7 +71,9 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_settings -> {
-                    showFragment(SettingsFragment())
+                    showInterstitialAdSettings {
+                        showFragment(SettingsFragment())
+                    }
                     true
                 }
                 else -> false
@@ -89,6 +100,24 @@ class MainActivity : AppCompatActivity() {
                     onComplete()
                 }
                 override fun onAdFailed(error: AdError) {
+                    onComplete()
+                }
+            }
+        )
+    }
+    
+    private fun showInterstitialAdSettings(onComplete: () -> Unit) {
+        Log.d("NphAds", "=== Showing interstitial for Settings: nsp_inter_settings ===")
+        NphAds.showInterstitial(
+            activity = this,
+            nameSpace = "nsp_inter_settings",
+            listener = object : NphAdListener() {
+                override fun onAdDismissed() {
+                    Log.d("NphAds", "=== Settings interstitial dismissed ===")
+                    onComplete()
+                }
+                override fun onAdFailed(error: AdError) {
+                    Log.e("NphAds", "=== Settings interstitial failed: ${error.message} ===")
                     onComplete()
                 }
             }

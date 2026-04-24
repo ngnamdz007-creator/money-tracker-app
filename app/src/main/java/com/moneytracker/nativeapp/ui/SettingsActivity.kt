@@ -2,7 +2,9 @@ package com.moneytracker.nativeapp.ui
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.MaterialToolbar
@@ -11,6 +13,9 @@ import com.google.android.material.textfield.TextInputEditText
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.UserSettings
+import com.nphlab.sdk.ads.NphAds
+import com.nphlab.sdk.ads.AdError
+import com.nphlab.sdk.ads.listener.NphAdListener
 import kotlinx.coroutines.launch
 import java.math.BigDecimal
 import java.util.Locale
@@ -42,9 +47,33 @@ class SettingsActivity : AppCompatActivity() {
         repository = MoneyTrackerRepository(this)
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
-            setNavigationOnClickListener { finish() }
+            setNavigationOnClickListener {
+                Log.d("SettingsActivity", "=== Toolbar navigation clicked ===")
+                onBackPressedDispatcher.onBackPressed()
+            }
             title = getString(R.string.profile)
         }
+        
+        // Register back button interstitial ad
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                Log.d("SettingsActivity", "=== Back pressed, showing interstitial ad ===")
+                NphAds.showInterstitial(
+                    activity = this@SettingsActivity,
+                    nameSpace = "nsp_inter_settings",
+                    listener = object : NphAdListener() {
+                        override fun onAdDismissed() {
+                            Log.d("NphAds", "=== Settings interstitial dismissed, finishing ===")
+                            finish()
+                        }
+                        override fun onAdFailed(error: AdError) {
+                            Log.e("NphAds", "=== Settings interstitial failed: ${error.message}, finishing ===")
+                            finish()
+                        }
+                    }
+                )
+            }
+        })
         
         etUserName = findViewById(R.id.etUserName)
         etMonthlyBudget = findViewById(R.id.etMonthlyBudget)
