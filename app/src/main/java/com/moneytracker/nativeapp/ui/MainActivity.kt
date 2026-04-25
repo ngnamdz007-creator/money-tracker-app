@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.FrameLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import com.moneytracker.nativeapp.MoneyTrackerApplication
 import com.moneytracker.nativeapp.R
 import com.nphlab.sdk.ads.NphAds
 import com.nphlab.sdk.ads.listener.NphAdListener
@@ -43,12 +42,10 @@ class MainActivity : AppCompatActivity() {
             showFragment(HomeFragment())
         }
         
-        // Load banner ad (check SDK ready)
+        // Load banner ad
         val bannerContainer = findViewById<FrameLayout>(R.id.bannerAdContainer)
-        if (MoneyTrackerApplication.isSdkReady) {
-            bannerContainer?.let {
-                NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
-            }
+        bannerContainer?.let {
+            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
         }
     }
     
@@ -93,10 +90,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInterstitialAd(onComplete: () -> Unit) {
-        if (!MoneyTrackerApplication.isSdkReady) {
-            onComplete()
-            return
-        }
         NphAds.showInterstitial(
             activity = this,
             nameSpace = "nsp_inter_main",
@@ -112,10 +105,6 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun showInterstitialAdSettings(onComplete: () -> Unit) {
-        if (!MoneyTrackerApplication.isSdkReady) {
-            onComplete()
-            return
-        }
         NphAds.showInterstitial(
             activity = this,
             nameSpace = "nsp_inter_settings",

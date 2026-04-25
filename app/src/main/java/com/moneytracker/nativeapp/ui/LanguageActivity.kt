@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
-import com.moneytracker.nativeapp.MoneyTrackerApplication
 import com.moneytracker.nativeapp.R
 import com.moneytracker.nativeapp.data.MoneyTrackerRepository
 import com.moneytracker.nativeapp.data.UserSettings
@@ -45,10 +44,6 @@ class LanguageActivity : AppCompatActivity() {
         // Register back button interstitial ad
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                if (!MoneyTrackerApplication.isSdkReady) {
-                    finish()
-                    return
-                }
                 NphAds.showInterstitial(
                     activity = this@LanguageActivity,
                     nameSpace = "nsp_inter_language",
