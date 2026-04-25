@@ -80,12 +80,11 @@ class HomeFragment : Fragment() {
             (activity as? MainActivity)?.navigateToAddTransaction()
         }
         
-        // Load banner ad
+        // Load banner ad (delay to ensure SDK ready)
         val bannerContainer = view.findViewById<android.widget.FrameLayout>(R.id.bannerAdContainer)
-        bannerContainer?.let {
-            android.util.Log.d("HomeFragment", "Loading banner ad...")
-            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
-        } ?: android.util.Log.e("HomeFragment", "Banner container not found!")
+        bannerContainer?.postDelayed({
+            NphAds.loadBannerInto(bannerContainer, "nsp_bn_home_bottom")
+        }, 1500)
         
         setupPeriodSelector()
         setupDatePicker()

@@ -35,8 +35,29 @@
       "unitIds": [
         { "unitId": "ca-app-pub-3940256099942544/1033173712", "isEnable": true, "network": "admob" }
       ]
+    },
+    {
+      "nameSpace": "nsp_inter_language",
+      "isEnable": true,
+      "interval": 25,
+      "stepCount": 1,
+      "forceShow": false,
+      "unitIds": [
+        { "unitId": "ca-app-pub-3940256099942544/1033173712", "isEnable": true, "network": "admob" }
+      ]
+    },
+    {
+      "nameSpace": "nsp_inter_settings",
+      "isEnable": true,
+      "interval": 25,
+      "stepCount": 1,
+      "forceShow": false,
+      "unitIds": [
+        { "unitId": "ca-app-pub-3940256099942544/1033173712", "isEnable": true, "network": "admob" }
+      ]
     }
   ],
+  "rewardedAds": [],
   "bannerAds": [
     {
       "nameSpace": "nsp_bn_home_bottom",

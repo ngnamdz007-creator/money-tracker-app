@@ -4,8 +4,8 @@ ADDED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\Androi
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:2:1-64:12
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:2:1-64:12
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:2:1-64:12
-MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:2:1-20:12
-MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\ec6bf5bf34b6a073d2c88474db843d02\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:2:1-9:12
+MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:2:1-20:12
+MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\a195dddd08dfff6777ab3c8cc00ef504\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:2:1-9:12
 MERGED from [nph-track-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\756b4059e165e170b5bf49e49363a937\workspace\transformed\jetified-nph-track-1.0.1-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5d7f82377df1bed296871b175795ac09\workspace\transformed\jetified-viewbinding-8.7.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.5] C:\Users\NAM\.gradle\caches\9.3.1\transforms\7fd2778abd264a6d80fec9fdec3d8ffe\workspace\transformed\navigation-common-2.8.5\AndroidManifest.xml:17:1-22:12
@@ -137,8 +137,8 @@ MERGED from [com.android.installreferrer:installreferrer:2.2] C:\Users\NAM\.grad
 application
 ADDED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:5:5-62:19
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml:5:5-62:19
-MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:11:5-18:19
-MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:11:5-18:19
+MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:11:5-18:19
+MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:11:5-18:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\e7c62041cdd642bbf5e2f7403cbf23bd\workspace\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\e7c62041cdd642bbf5e2f7403cbf23bd\workspace\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\74ca000b10776631eae37278e4aba88f\workspace\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -327,10 +327,10 @@ uses-sdk
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml
-MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:6:5-44
-MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:6:5-44
-MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\ec6bf5bf34b6a073d2c88474db843d02\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:5:5-44
-MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\ec6bf5bf34b6a073d2c88474db843d02\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:5:5-44
+MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:6:5-44
+MERGED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:6:5-44
+MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\a195dddd08dfff6777ab3c8cc00ef504\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:5:5-44
+MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\a195dddd08dfff6777ab3c8cc00ef504\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:5:5-44
 MERGED from [nph-track-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\756b4059e165e170b5bf49e49363a937\workspace\transformed\jetified-nph-track-1.0.1-release\AndroidManifest.xml:5:5-44
 MERGED from [nph-track-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\756b4059e165e170b5bf49e49363a937\workspace\transformed\jetified-nph-track-1.0.1-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5d7f82377df1bed296871b175795ac09\workspace\transformed\jetified-viewbinding-8.7.2\AndroidManifest.xml:5:5-44
@@ -574,9 +574,9 @@ MERGED from [com.android.installreferrer:installreferrer:2.2] C:\Users\NAM\.grad
 	android:minSdkVersion
 		INJECTED from C:\Users\NAM\CascadeProjects\money-tracker-native\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:5-67
-MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\ec6bf5bf34b6a073d2c88474db843d02\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:7:5-67
-MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\ec6bf5bf34b6a073d2c88474db843d02\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:7:5-67
+ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:5-67
+MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\a195dddd08dfff6777ab3c8cc00ef504\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:7:5-67
+MERGED from [nph-config-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\a195dddd08dfff6777ab3c8cc00ef504\workspace\transformed\jetified-nph-config-1.0.1-release\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:24.0.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\b3f9930407357328b93b68a4de210abf\workspace\transformed\jetified-play-services-ads-lite-24.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:24.0.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\b3f9930407357328b93b68a4de210abf\workspace\transformed\jetified-play-services-ads-lite-24.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\d3fc817c4540205ec8c83d0fca8c19c1\workspace\transformed\jetified-play-services-measurement-22.1.2\AndroidManifest.xml:23:5-67
@@ -594,9 +594,9 @@ MERGED from [com.github.tiktok:tiktok-business-android-sdk:1.6.1] C:\Users\NAM\.
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\78b2b4e8a9a48d661f8dac5d68f97516\workspace\transformed\jetified-play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\78b2b4e8a9a48d661f8dac5d68f97516\workspace\transformed\jetified-play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:22-64
+		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:5-79
+ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:24.0.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\b3f9930407357328b93b68a4de210abf\workspace\transformed\jetified-play-services-ads-lite-24.0.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:24.0.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\b3f9930407357328b93b68a4de210abf\workspace\transformed\jetified-play-services-ads-lite-24.0.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\d3fc817c4540205ec8c83d0fca8c19c1\workspace\transformed\jetified-play-services-measurement-22.1.2\AndroidManifest.xml:24:5-79
@@ -614,18 +614,18 @@ MERGED from [androidx.work:work-runtime:2.7.0] C:\Users\NAM\.gradle\caches\9.3.1
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\78b2b4e8a9a48d661f8dac5d68f97516\workspace\transformed\jetified-play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\78b2b4e8a9a48d661f8dac5d68f97516\workspace\transformed\jetified-play-services-measurement-sdk-api-22.1.2\AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:22-76
+		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:22-76
 property#android.adservices.AD_SERVICES_CONFIG
-ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:14:9-17:48
+ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:14:9-17:48
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\60d36b999bb4309b83021e78dc5269bb\workspace\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
 MERGED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\60d36b999bb4309b83021e78dc5269bb\workspace\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:30:9-32:61
 	android:resource
-		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:16:13-59
+		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:16:13-59
 		REJECTED from [com.google.android.gms:play-services-measurement-api:22.1.2] C:\Users\NAM\.gradle\caches\9.3.1\transforms\60d36b999bb4309b83021e78dc5269bb\workspace\transformed\jetified-play-services-measurement-api-22.1.2\AndroidManifest.xml:32:13-58
 	tools:replace
-		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:17:13-45
+		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:17:13-45
 	android:name
-		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:15:13-65
+		ADDED from [nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:15:13-65
 queries
 ADDED from [com.facebook.android:facebook-common:18.2.3] C:\Users\NAM\.gradle\caches\9.3.1\transforms\15fc2f1022df254945ebad284abbbc1b\workspace\transformed\jetified-facebook-common-18.2.3\AndroidManifest.xml:15:5-17:15
 MERGED from [com.google.android.gms:play-services-ads-lite:24.0.0] C:\Users\NAM\.gradle\caches\9.3.1\transforms\b3f9930407357328b93b68a4de210abf\workspace\transformed\jetified-play-services-ads-lite-24.0.0\AndroidManifest.xml:35:5-68:15

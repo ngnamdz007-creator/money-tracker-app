@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:5-67
-11-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:22-64
+11-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:5-67
+11-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:8:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:5-79
-12-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:22-76
+12-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:5-79
+12-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:9:22-76
 13
 14    <queries>
 14-->[com.facebook.android:facebook-common:18.2.3] C:\Users\NAM\.gradle\caches\9.3.1\transforms\15fc2f1022df254945ebad284abbbc1b\workspace\transformed\jetified-facebook-common-18.2.3\AndroidManifest.xml:15:5-17:15
@@ -212,11 +212,11 @@
 115
 116        <!-- Fix manifest merger conflict with AdMob SDK 23+ AD_SERVICES_CONFIG -->
 117        <property
-117-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:14:9-17:48
+117-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:14:9-17:48
 118            android:name="android.adservices.AD_SERVICES_CONFIG"
-118-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:15:13-65
+118-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:15:13-65
 119            android:resource="@xml/gma_ad_services_config" />
-119-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\2b95989bc158ce0442420da3ede0e29e\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:16:13-59
+119-->[nph-ads-1.0.1-release.aar] C:\Users\NAM\.gradle\caches\9.3.1\transforms\5f2d61d243bcb4d7dca5c476d18af9f3\workspace\transformed\jetified-nph-ads-1.0.1-release\AndroidManifest.xml:16:13-59
 120
 121        <activity
 121-->[com.facebook.android:facebook-common:18.2.3] C:\Users\NAM\.gradle\caches\9.3.1\transforms\15fc2f1022df254945ebad284abbbc1b\workspace\transformed\jetified-facebook-common-18.2.3\AndroidManifest.xml:20:9-23:66

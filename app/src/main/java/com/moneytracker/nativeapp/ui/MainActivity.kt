@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
             showFragment(HomeFragment())
         }
         
-        // Load banner ad
+        // Load banner ad (delay to ensure SDK ready)
         val bannerContainer = findViewById<FrameLayout>(R.id.bannerAdContainer)
-        bannerContainer?.let {
-            NphAds.loadBannerInto(it, "nsp_bn_home_bottom")
-        }
+        bannerContainer?.postDelayed({
+            NphAds.loadBannerInto(bannerContainer, "nsp_bn_home_bottom")
+        }, 1500)
     }
     
     private fun setupBottomNavigation() {
