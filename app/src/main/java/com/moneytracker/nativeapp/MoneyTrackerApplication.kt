@@ -25,7 +25,7 @@ class MoneyTrackerApplication : Application() {
         try {
             NphSdk.init(
                 context = this,
-                apiKey = "nph_zQPZWBcm23CZlBYQF2Isb_N7KuMKfJOK",
+                apiKey = "nph_zQPZWBcm23CZIBYQF2Isb_N7KuMKfJOK",
                 configSource = ConfigSource.FIREBASE,
                 enableDebug = true
             )
