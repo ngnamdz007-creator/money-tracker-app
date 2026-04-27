@@ -12,26 +12,24 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Wait for SDK to fully initialize before showing splash ad
-        // SDK needs ~1.5s to init + load App Open ad
         val handler = android.os.Handler(mainLooper)
-        val timeoutRunnable = Runnable { navigateToMain() }
+        val navigateRunnable = Runnable { navigateToMain() }
 
-        // Timeout safety: navigate after 4s max regardless
-        handler.postDelayed(timeoutRunnable, 4000)
-
-        // Try to show splash ad
+        // Wait 1.5s for SDK to fully initialize, then show splash
         handler.postDelayed({
             try {
                 NphAds.showSplash(this) {
-                    handler.removeCallbacks(timeoutRunnable)
+                    // Ad finished or failed — navigate immediately
+                    handler.removeCallbacks(navigateRunnable)
                     navigateToMain()
                 }
             } catch (e: Exception) {
-                handler.removeCallbacks(timeoutRunnable)
                 navigateToMain()
             }
-        }, 1500) // Wait 1.5s for SDK to be ready
+        }, 1500)
+
+        // Safety timeout: max 8 seconds on splash screen
+        handler.postDelayed(navigateRunnable, 8000)
     }
 
     private fun navigateToMain() {
