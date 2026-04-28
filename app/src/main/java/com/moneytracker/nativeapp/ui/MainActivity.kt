@@ -10,6 +10,7 @@ import com.moneytracker.nativeapp.R
 import com.nphlab.sdk.ads.NphAds
 import com.nphlab.sdk.ads.listener.NphAdListener
 import com.nphlab.sdk.ads.AdError
+import androidx.activity.OnBackPressedCallback
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,19 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             showFragment(HomeFragment())
         }
+        
+        // Handle back button: go to home tab or minimize app
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                // If not on home tab → switch to home tab
+                if (bottomNav.selectedItemId != R.id.nav_home) {
+                    bottomNav.selectedItemId = R.id.nav_home
+                } else {
+                    // Already on home → minimize app instead of closing
+                    moveTaskToBack(true)
+                }
+            }
+        })
         
         // Load banner ad (delay to ensure SDK ready)
         val bannerContainer = findViewById<FrameLayout>(R.id.bannerAdContainer)
