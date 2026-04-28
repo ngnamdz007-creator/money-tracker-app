@@ -41,17 +41,25 @@ class LanguageActivity : AppCompatActivity() {
             title = getString(R.string.language)
         }
         
-        // Register back button interstitial ad
+        // Register back button interstitial ad with timeout fallback
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            private var isHandling = false
             override fun handleOnBackPressed() {
+                if (isHandling) return
+                isHandling = true
+                val handler = android.os.Handler(mainLooper)
+                val fallback = Runnable { if (!isFinishing) finish() }
+                handler.postDelayed(fallback, 3000)
                 NphAds.showInterstitial(
                     activity = this@LanguageActivity,
                     nameSpace = "nsp_inter_language",
                     listener = object : NphAdListener() {
                         override fun onAdDismissed() {
+                            handler.removeCallbacks(fallback)
                             finish()
                         }
                         override fun onAdFailed(error: AdError) {
+                            handler.removeCallbacks(fallback)
                             finish()
                         }
                     }

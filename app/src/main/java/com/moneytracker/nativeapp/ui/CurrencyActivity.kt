@@ -44,22 +44,35 @@ class CurrencyActivity : AppCompatActivity() {
         
         repository = MoneyTrackerRepository(this)
         
-        findViewById<MaterialToolbar>(R.id.toolbar).apply {
-            setNavigationOnClickListener {
-                onBackPressedDispatcher.onBackPressed()
-            }
-            title = getString(R.string.currency)
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
+        toolbar.title = getString(R.string.currency)
         
-        // Register back button interstitial ad
+        // Register back button interstitial ad with timeout fallback
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            private var isHandling = false
             override fun handleOnBackPressed() {
+                if (isHandling) return
+                isHandling = true
+                val handler = android.os.Handler(mainLooper)
+                val fallback = Runnable { if (!isFinishing) finish() }
+                handler.postDelayed(fallback, 3000)
                 NphAds.showInterstitial(
                     activity = this@CurrencyActivity,
                     nameSpace = "nsp_inter_currency",
                     listener = object : NphAdListener() {
-                        override fun onAdDismissed() { finish() }
-                        override fun onAdFailed(error: AdError) { finish() }
+                        override fun onAdDismissed() {
+                            handler.removeCallbacks(fallback)
+                            finish()
+                        }
+                        override fun onAdFailed(error: AdError) {
+                            handler.removeCallbacks(fallback)
+                            finish()
+                        }
                     }
                 )
             }
