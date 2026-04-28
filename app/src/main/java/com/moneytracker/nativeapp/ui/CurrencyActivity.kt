@@ -6,7 +6,11 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.OnBackPressedCallback
 import androidx.lifecycle.lifecycleScope
+import com.nphlab.sdk.ads.NphAds
+import com.nphlab.sdk.ads.listener.NphAdListener
+import com.nphlab.sdk.ads.AdError
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 import com.moneytracker.nativeapp.R
