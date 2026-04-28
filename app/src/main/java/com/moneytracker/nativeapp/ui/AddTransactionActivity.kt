@@ -56,8 +56,24 @@ class AddTransactionActivity : AppCompatActivity() {
         repository = MoneyTrackerRepository(this)
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
-            setNavigationOnClickListener { finish() }
+            setNavigationOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
         }
+        
+        // Register back button interstitial ad
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                NphAds.showInterstitial(
+                    activity = this@AddTransactionActivity,
+                    nameSpace = "nsp_inter_add_transaction",
+                    listener = object : NphAdListener() {
+                        override fun onAdDismissed() { finish() }
+                        override fun onAdFailed(error: AdError) { finish() }
+                    }
+                )
+            }
+        })
         
         radioType = findViewById(R.id.radioType)
         etAmount = findViewById(R.id.etAmount)

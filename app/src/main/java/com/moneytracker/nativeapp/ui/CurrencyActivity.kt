@@ -41,9 +41,25 @@ class CurrencyActivity : AppCompatActivity() {
         repository = MoneyTrackerRepository(this)
         
         findViewById<MaterialToolbar>(R.id.toolbar).apply {
-            setNavigationOnClickListener { finish() }
+            setNavigationOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
             title = getString(R.string.currency)
         }
+        
+        // Register back button interstitial ad
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                NphAds.showInterstitial(
+                    activity = this@CurrencyActivity,
+                    nameSpace = "nsp_inter_currency",
+                    listener = object : NphAdListener() {
+                        override fun onAdDismissed() { finish() }
+                        override fun onAdFailed(error: AdError) { finish() }
+                    }
+                )
+            }
+        })
         
         radioGroup = findViewById(R.id.radioGroupCurrency)
         btnSave = findViewById(R.id.btnSave)

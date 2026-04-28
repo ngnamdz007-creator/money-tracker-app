@@ -55,7 +55,23 @@ class CategoriesActivity : AppCompatActivity() {
         
         repository = MoneyTrackerRepository(this)
         
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+        
+        // Register back button interstitial ad
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                NphAds.showInterstitial(
+                    activity = this@CategoriesActivity,
+                    nameSpace = "nsp_inter_categories",
+                    listener = object : NphAdListener() {
+                        override fun onAdDismissed() { finish() }
+                        override fun onAdFailed(error: AdError) { finish() }
+                    }
+                )
+            }
+        })
         
         rvCategories = findViewById(R.id.rvCategories)
         tabLayout = findViewById(R.id.tabLayout)
