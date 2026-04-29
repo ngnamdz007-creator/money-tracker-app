@@ -129,6 +129,11 @@ class CategoriesActivity : AppCompatActivity() {
         }
     }
     
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return true
+    }
+    
     private fun showCategoryDialog(category: Category?) {
         val dialogView = layoutInflater.inflate(R.layout.dialog_category, null)
         val etName = dialogView.findViewById<TextInputEditText>(R.id.etCategoryName)
